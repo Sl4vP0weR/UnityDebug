@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33027.239
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityDebug", "UnityDebug.csproj", "{B23E25E0-997B-4922-B258-7AF385C77529}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Linux|Any CPU = Linux|Any CPU
+		Linux|x64 = Linux|x64
+		Linux|x86 = Linux|x86
+		MacOS|Any CPU = MacOS|Any CPU
+		MacOS|x64 = MacOS|x64
+		MacOS|x86 = MacOS|x86
+		Win|Any CPU = Win|Any CPU
+		Win|x64 = Win|x64
+		Win|x86 = Win|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B23E25E0-997B-4922-B258-7AF385C77529}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B23E25E0-997B-4922-B258-7AF385C77529}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B23E25E0-997B-4922-B258-7AF385C77529}.Debug|x64.ActiveCfg = Debug|x64
+		{B23E25E0-997B-4922-B258-7AF385C77529}.Debug|x64.Build.0 = Debug|x64
+		{B23E25E0-997B-4922-B258-7AF385C77529}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{B23E25E0-997B-4922-B258-7AF385C77529}.Debug|x86.Build.0 = Debug|Any CPU
+		{B23E25E0-997B-4922-B258-7AF385C77529}.Linux|Any CPU.ActiveCfg = Linux|Any CPU
+		{B23E25E0-997B-4922-B258-7AF385C77529}.Linux|Any CPU.Build.0 = Linux|Any CPU
+		{B23E25E0-997B-4922-B258-7AF385C77529}.Linux|x64.ActiveCfg = Linux|x64
+		{B23E25E0-997B-4922-B258-7AF385C77529}.Linux|x64.Build.0 = Linux|x64
+		{B23E25E0-997B-4922-B258-7AF385C77529}.Linux|x86.ActiveCfg = Linux|x86
+		{B23E25E0-997B-4922-B258-7AF385C77529}.Linux|x86.Build.0 = Linux|x86
+		{B23E25E0-997B-4922-B258-7AF385C77529}.MacOS|Any CPU.ActiveCfg = MacOS|Any CPU
+		{B23E25E0-997B-4922-B258-7AF385C77529}.MacOS|Any CPU.Build.0 = MacOS|Any CPU
+		{B23E25E0-997B-4922-B258-7AF385C77529}.MacOS|x64.ActiveCfg = MacOS|x64
+		{B23E25E0-997B-4922-B258-7AF385C77529}.MacOS|x64.Build.0 = MacOS|x64
+		{B23E25E0-997B-4922-B258-7AF385C77529}.MacOS|x86.ActiveCfg = MacOS|x64
+		{B23E25E0-997B-4922-B258-7AF385C77529}.MacOS|x86.Build.0 = MacOS|x64
+		{B23E25E0-997B-4922-B258-7AF385C77529}.Win|Any CPU.ActiveCfg = Win|Any CPU
+		{B23E25E0-997B-4922-B258-7AF385C77529}.Win|Any CPU.Build.0 = Win|Any CPU
+		{B23E25E0-997B-4922-B258-7AF385C77529}.Win|x64.ActiveCfg = Win|x64
+		{B23E25E0-997B-4922-B258-7AF385C77529}.Win|x64.Build.0 = Win|x64
+		{B23E25E0-997B-4922-B258-7AF385C77529}.Win|x86.ActiveCfg = Win|x86
+		{B23E25E0-997B-4922-B258-7AF385C77529}.Win|x86.Build.0 = Win|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A49B7B7B-E350-49CD-98B1-A802D36279AC}
+	EndGlobalSection
+EndGlobal

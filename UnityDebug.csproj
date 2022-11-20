@@ -1,0 +1,52 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net4.8</TargetFramework>
+		<LangVersion>preview</LangVersion>
+		<RootNamespace>Doorstop</RootNamespace>
+		<AssemblyName>Doorstop</AssemblyName>
+		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+		<BaseOutputPath>$(ProjectDir)build\</BaseOutputPath>
+		<BuildPath>$(BaseOutputPath)$(Configuration)_$(Platform)\</BuildPath>
+		<OutputPath>$(BuildPath)Doorstop\</OutputPath>
+		<AssetsPath>$(ProjectDor)Assets\</AssetsPath>
+		<DoorstopBinaries>$(ProjectDir)Doorstop\</DoorstopBinaries>
+		<!-- AnyCPU won't copy doorstop binaries! -->
+		<Platforms>AnyCPU;x64;x86</Platforms>
+		<Configurations>Debug;Win;Linux;MacOS</Configurations>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<!-- Check for updated Assets files -->
+		<UpToDateCheckInput Include="$(AssetsDir)**" />
+
+		<!-- Hide output -->
+		<Compile Remove="$(BaseOutputPath)**" />
+		<EmbeddedResource Remove="$(BaseOutputPath)**" />
+		<None Remove="$(BaseOutputPath)**" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Lib.Harmony" Version="2.2.2" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Reference Include="Mono.Cecil" HintPath="libs\Mono.Cecil.dll" />
+	  <Reference Include="Mono.CompilerServices.SymbolWriter" HintPath="libs\Mono.CompilerServices.SymbolWriter.dll" />
+	  <Reference Include="pdb2mdb" HintPath="libs\pdb2mdb.exe" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Using Include="HarmonyLib" />
+	</ItemGroup>
+
+	<Target Name="cleanup" AfterTargets="BeforeClean">
+		<Exec Command="rmdir /S /Q &quot;$(BaseOutputPath)&quot;" />
+	</Target>
+
+	<Target Name="postbuild" AfterTargets="PostBuildEvent">
+		<Exec Command="xcopy /Y /R /S /D /I &quot;$(AssetsPath)&quot; &quot;$(BuildPath)&quot;" />
+		<Exec Command="xcopy /Y /R /S /D /I &quot;$(DoorstopBinaries)$(Configuration)\$(Platform)&quot; &quot;$(BuildPath)&quot;" />
+	</Target>
+
+</Project>
