@@ -1,10 +1,10 @@
 # UnityDebug
-UnityDoorstep implementation with Harmony patch that converts pdb to mdb allowing mono to read debug symbols.
+UnityDoorstop implementation with Harmony patch that converts pdb to mdb allowing mono to read debug symbols.
 
 ### Prerequisites:
 
 - [.NET SDK 6+](https://dotnet.microsoft.com/en-us/download/dotnet/6.0)
-- [.NET 4.8 Runtime + SDK](https://dotnet.microsoft.com/en-us/download/dotnet-framework/net48)
+- [.NET Runtime + SDK 4.8](https://dotnet.microsoft.com/en-us/download/dotnet-framework/net48)
 
 ### How to build:
 
