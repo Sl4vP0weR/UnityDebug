@@ -1,3 +1,7 @@
+### Ignore tests path (Local) 
+
+/Tests
+
 ### Ignore build path
 
 /[Bb]uild/

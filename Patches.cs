@@ -1,7 +1,4 @@
-﻿using System;
-using System.Security.Policy;
-
-namespace Doorstop;
+﻿namespace Doorstop;
 
 [Harmony]
 public static partial class Patches

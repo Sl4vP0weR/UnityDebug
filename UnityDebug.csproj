@@ -24,20 +24,21 @@
 		<Compile Remove="$(BaseOutputPath)**" />
 		<EmbeddedResource Remove="$(BaseOutputPath)**" />
 		<None Remove="$(BaseOutputPath)**" />
+		<!-- Hide inner projects -->
+		<Compile Remove="HotReload\**" />
+		<EmbeddedResource Remove="HotReload\**" />
+		<None Remove="HotReload\**" />
+		<Compile Remove="Tests\**" />
+		<EmbeddedResource Remove="Tests\**" />
+		<None Remove="Tests\**" />
 	</ItemGroup>
 
-	<ItemGroup>
-		<PackageReference Include="Lib.Harmony" Version="2.2.2" />
-	</ItemGroup>
+	<Import Project="$(SolutionDir)Shared.props.csproj" />
 
 	<ItemGroup>
-	  <Reference Include="Mono.Cecil" HintPath="libs\Mono.Cecil.dll" />
-	  <Reference Include="Mono.CompilerServices.SymbolWriter" HintPath="libs\Mono.CompilerServices.SymbolWriter.dll" />
-	  <Reference Include="pdb2mdb" HintPath="libs\pdb2mdb.exe" />
-	</ItemGroup>
-
-	<ItemGroup>
-		<Using Include="HarmonyLib" />
+		<Reference Include="Mono.Cecil" HintPath="libs\Mono.Cecil.dll" />
+		<Reference Include="Mono.CompilerServices.SymbolWriter" HintPath="libs\Mono.CompilerServices.SymbolWriter.dll" />
+		<Reference Include="pdb2mdb" HintPath="libs\pdb2mdb.exe" />
 	</ItemGroup>
 
 	<Target Name="cleanup" AfterTargets="BeforeClean">
