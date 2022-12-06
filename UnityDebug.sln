@@ -3,7 +3,14 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33027.239
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityDebug", "UnityDebug.csproj", "{B23E25E0-997B-4922-B258-7AF385C77529}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnityDebug", "UnityDebug.csproj", "{B23E25E0-997B-4922-B258-7AF385C77529}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{AA2923C3-FB56-4987-AF8A-F286B7B30E42}"
+	ProjectSection(SolutionItems) = preProject
+		Shared.props.csproj = Shared.props.csproj
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tests", "Tests\Tests.csproj", "{2CBFDEB6-487E-45EB-9F6F-86D0614601B5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +52,30 @@ Global
 		{B23E25E0-997B-4922-B258-7AF385C77529}.Win|x64.Build.0 = Win|x64
 		{B23E25E0-997B-4922-B258-7AF385C77529}.Win|x86.ActiveCfg = Win|x86
 		{B23E25E0-997B-4922-B258-7AF385C77529}.Win|x86.Build.0 = Win|x86
+		{2CBFDEB6-487E-45EB-9F6F-86D0614601B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CBFDEB6-487E-45EB-9F6F-86D0614601B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CBFDEB6-487E-45EB-9F6F-86D0614601B5}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{2CBFDEB6-487E-45EB-9F6F-86D0614601B5}.Debug|x64.Build.0 = Debug|Any CPU
+		{2CBFDEB6-487E-45EB-9F6F-86D0614601B5}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{2CBFDEB6-487E-45EB-9F6F-86D0614601B5}.Debug|x86.Build.0 = Debug|Any CPU
+		{2CBFDEB6-487E-45EB-9F6F-86D0614601B5}.Linux|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CBFDEB6-487E-45EB-9F6F-86D0614601B5}.Linux|Any CPU.Build.0 = Debug|Any CPU
+		{2CBFDEB6-487E-45EB-9F6F-86D0614601B5}.Linux|x64.ActiveCfg = Debug|Any CPU
+		{2CBFDEB6-487E-45EB-9F6F-86D0614601B5}.Linux|x64.Build.0 = Debug|Any CPU
+		{2CBFDEB6-487E-45EB-9F6F-86D0614601B5}.Linux|x86.ActiveCfg = Debug|Any CPU
+		{2CBFDEB6-487E-45EB-9F6F-86D0614601B5}.Linux|x86.Build.0 = Debug|Any CPU
+		{2CBFDEB6-487E-45EB-9F6F-86D0614601B5}.MacOS|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CBFDEB6-487E-45EB-9F6F-86D0614601B5}.MacOS|Any CPU.Build.0 = Debug|Any CPU
+		{2CBFDEB6-487E-45EB-9F6F-86D0614601B5}.MacOS|x64.ActiveCfg = Debug|Any CPU
+		{2CBFDEB6-487E-45EB-9F6F-86D0614601B5}.MacOS|x64.Build.0 = Debug|Any CPU
+		{2CBFDEB6-487E-45EB-9F6F-86D0614601B5}.MacOS|x86.ActiveCfg = Debug|Any CPU
+		{2CBFDEB6-487E-45EB-9F6F-86D0614601B5}.MacOS|x86.Build.0 = Debug|Any CPU
+		{2CBFDEB6-487E-45EB-9F6F-86D0614601B5}.Win|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CBFDEB6-487E-45EB-9F6F-86D0614601B5}.Win|Any CPU.Build.0 = Debug|Any CPU
+		{2CBFDEB6-487E-45EB-9F6F-86D0614601B5}.Win|x64.ActiveCfg = Debug|Any CPU
+		{2CBFDEB6-487E-45EB-9F6F-86D0614601B5}.Win|x64.Build.0 = Debug|Any CPU
+		{2CBFDEB6-487E-45EB-9F6F-86D0614601B5}.Win|x86.ActiveCfg = Debug|Any CPU
+		{2CBFDEB6-487E-45EB-9F6F-86D0614601B5}.Win|x86.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

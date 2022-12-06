@@ -10,5 +10,6 @@ public static class Entrypoint
 #endif
         Harmony = new(nameof(Doorstop));
         Harmony.PatchAll();
+        HotReloader.Initialize();
     }
 }
