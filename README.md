@@ -3,7 +3,7 @@ UnityDoorstop implementation with Harmony patch that converts pdb to mdb allowin
 
 ### Prerequisites:
 
-- [.NET SDK 6+](https://dotnet.microsoft.com/en-us/download/dotnet/6.0)
+- [.NET SDK 7+](https://dotnet.microsoft.com/en-us/download/dotnet/7.0)
 - [.NET Runtime + SDK 4.8](https://dotnet.microsoft.com/en-us/download/dotnet-framework/net48)
 
 ### How to build:
