@@ -17,10 +17,6 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Mono.HotReload" Version="*" />
-	</ItemGroup>
-
-	<ItemGroup>
 		<Using Include="HarmonyLib" />
 	</ItemGroup>
 	

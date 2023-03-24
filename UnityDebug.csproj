@@ -24,13 +24,6 @@
 		<Compile Remove="$(BaseOutputPath)**" />
 		<EmbeddedResource Remove="$(BaseOutputPath)**" />
 		<None Remove="$(BaseOutputPath)**" />
-		<!-- Hide inner projects -->
-		<Compile Remove="HotReload\**" />
-		<EmbeddedResource Remove="HotReload\**" />
-		<None Remove="HotReload\**" />
-		<Compile Remove="Tests\**" />
-		<EmbeddedResource Remove="Tests\**" />
-		<None Remove="Tests\**" />
 	</ItemGroup>
 
 	<Import Project="$(SolutionDir)Shared.props.csproj" />

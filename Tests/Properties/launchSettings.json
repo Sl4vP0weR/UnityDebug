@@ -1,9 +1,0 @@
-{
-  "profiles": {
-    "Run Mono": {
-      "commandName": "Executable",
-      "executablePath": "C:\\Program Files\\Mono\\bin\\mono.exe",
-      "commandLineArgs": "--debug Tests.exe"
-    }
-  }
-}
