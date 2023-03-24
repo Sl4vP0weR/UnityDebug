@@ -9,7 +9,7 @@ UnityDoorstop implementation with Harmony patch that converts pdb to mdb allowin
 ### How to build:
 
 1. Select your configuration(Win/MacOS/Linux).
-2. Select your platform(x64/x86) or AnyCPU if you already installed UnityDoorstep.
+2. Select your platform(x64/x86) or AnyCPU if you already installed UnityDoorstop.
 3. Build project.
 4. Copy contents of (Project Directory)/build/(Configuration)_(Platform)/ to the root of the game.
 
