@@ -6,7 +6,7 @@
 
 	<ItemGroup>
 		<Publicize Include="mscorlib" />
-		<PackageReference Include="Krafs.Publicizer" Version="1.*">
+		<PackageReference Include="Krafs.Publicizer" Version="*">
 			<PrivateAssets>all</PrivateAssets>
 			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
 		</PackageReference>
