@@ -1,0 +1,48 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net4.8</TargetFramework>
+		<LangVersion>preview</LangVersion>
+		<ImplicitUsings>true</ImplicitUsings>
+		<RootNamespace>Doorstop</RootNamespace>
+		<AssemblyName>Doorstop</AssemblyName>
+		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+		<BaseOutputPath>$(ProjectDir)../build/</BaseOutputPath>
+		<BuildDir>$(BaseOutputPath)$(Configuration)_$(Platform)/</BuildDir>
+		<OutputPath>$(BuildDir)Doorstop/</OutputPath>
+		<DoorstopDir>$(ProjectDir)../Doorstop/</DoorstopDir>
+		<DoorstopBinariesDir>$(DoorstopDir)$(Configuration)/$(Platform)/</DoorstopBinariesDir>
+		<DoorstopAssetsDir>$(DoorstopDir)Assets/</DoorstopAssetsDir>
+		<!-- AnyCPU won't copy doorstop binaries! -->
+		<Platforms>AnyCPU;x64;x86</Platforms>
+		<Configurations>Debug;Win;Linux;MacOS</Configurations>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Lib.Harmony" Version="*" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Using Include="HarmonyLib" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Reference Include="../libs/Mono.Cecil.dll" />
+		<Reference Include="../libs/Mono.CompilerServices.SymbolWriter.dll" />
+		<Reference Include="../libs/pdb2mdb.exe" />
+	</ItemGroup>
+
+	<Target Name="cleanup" AfterTargets="BeforeClean">
+		<RemoveDir Directories="$(BaseOutputPath)"/>
+	</Target>
+
+	<Target Name="postbuild" AfterTargets="PostBuildEvent">
+		<ItemGroup>
+			<DoorstopAssets Include="$(DoorstopAssetsDir)**/*.*"/>
+			<DoorstopBinaries Include="$(DoorstopBinariesDir)**/*.*"/>
+		</ItemGroup>
+		<Copy SourceFiles="@(DoorstopAssets)" DestinationFolder="$(BuildDir)%(RecursiveDir)" />
+		<Copy SourceFiles="@(DoorstopBinaries)" DestinationFolder="$(BuildDir)%(RecursiveDir)" />
+	</Target>
+
+</Project>
